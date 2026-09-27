@@ -25,9 +25,8 @@ counts and pass/fail status without digging through logs.
   from a master DAG via `TriggerDagRunOperator`.
 - **Dynamic task mapping** — ingestion and validation tasks expand over the
   table list at runtime rather than being hand-written per table.
-- **4 presentation tables** (`sales_summary`, `customer_summary`,
-  `product_summary`, `delivery_summary`) verified end to end: 18/18 validation
-  records passed, 9/9 transformation audits, all passing on the final master run.
+- **4 presentation tables (sales_summary, customer_summary, product_summary, delivery_summary) verified end to end.
+  Final run: 18/18 validation checks passed and 9/9 transformation audits passed.
 
 ## Repository structure
 
