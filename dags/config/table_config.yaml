@@ -1,0 +1,67 @@
+tables:
+
+  olist_customers_dataset:
+    key_columns:
+      - customer_id
+    checks:
+      null_check: true
+      duplicate_check: true
+
+  olist_orders_dataset:
+    key_columns:
+      - order_id
+    checks:
+      null_check: true
+      duplicate_check: true
+
+  olist_order_items_dataset:
+    key_columns:
+      - order_id
+      - order_item_id
+    checks:
+      null_check: true
+      duplicate_check: true
+
+  olist_order_payments_dataset:
+    key_columns:
+      - order_id
+      - payment_sequential
+    checks:
+      null_check: true
+      duplicate_check: true
+
+  olist_order_reviews_dataset:
+    key_columns:
+      - review_id
+      - order_id
+    checks:
+      null_check: true
+      duplicate_check: true
+
+  olist_products_dataset:
+    key_columns:
+      - product_id
+    checks:
+      null_check: true
+      duplicate_check: true
+
+  olist_sellers_dataset:
+    key_columns:
+      - seller_id
+    checks:
+      null_check: true
+      duplicate_check: true
+
+  olist_geolocation_dataset:
+    key_columns:
+      - geolocation_zip_code_prefix
+    checks:
+      null_check: true
+      duplicate_check: false
+
+  product_category_name_translation:
+    key_columns:
+      - string_field_0
+    checks:
+      null_check: true
+      duplicate_check: true
